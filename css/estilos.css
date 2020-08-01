@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+header{
+    width: 100%;
+}
+/*Navbar */
+#navbar{
+    position: fixed;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+}
+/*Main*/
+.main{
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+/*Cover*/
+#welcome-section{
+   background-image: url('../img/img2.jpg');
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+    height: 100vh;
+}
+
+.cover div{
+    position: relative;
+    top:250px;
+    text-align: center;
+    color: black;
+}
+
+.cover div button{
+    margin-top: 40px;
+    border: 1px solid lightgray;
+    width: 120px;
+    height: 40px;
+}
+
+.cover div h1, .cover div h2{
+    font-size: 3.2rem;
+    color: black;
+}
+
+/*rows*/
+.row-content{
+    margin-top: 45px;
+}
+/*about me*/
+.tecnologies-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tecnologies-container img{
+    width: 150px;
+}
+.tecnologies-container img:hover{
+    transform: scale(1.1);
+}
+.element-skill{
+    padding: 35px;
+}
+
+.element-skill:hover{
+    background-color:#f6f6fa
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+/*Projects*/
+.project{
+    position: relative;
+    flex-grow: 0;
+    flex-basis: 300px;
+    margin-bottom: 35px;
+}
+.project-tile{
+    position: absolute;
+    text-align: center;
+    line-height: 235px;
+    width: 100%;
+    font-size: 0px;
+}
+.project-tile a{
+    color:black;
+} 
+
+.project p{
+    padding: 15px;
+    text-align: justify;
+}
+
+.project-tile:hover{
+    font-size: 28px;
+    padding: 0;
+    color:black;
+    background: rgba(148, 158, 149, 0.8); 
+}
+
+.project-tile span:hover{
+    transform: scale(4);
+    padding: 0;
+    color:black;
+}
+
+.project img{
+    margin: 15px auto 0 auto;
+}
+/*Contact */
+
+
+.elem1{
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+input[type=submit]{
+    margin-top: 5px;
+    background-color: white;
+    height:35px;
+} 
+.elem2{
+    flex-grow: 1;
+    flex-basis:400px;
+    padding: 0 20px;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+.datos{
+    margin-top: 25px;
+}
+
+/*footer*/
+footer{
+    margin-top: 150px;
+    width: 100%;
+    background-color: #111111;
+    height: 100px;
+}
+footer a{
+    color: white;
+}
+
+footer ul{
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+@media (max-width:1157px){
+    .cover div{
+        top:150px;
+    }
+}
+
+@media (max-width:995px){
+    .element-contact{
+        flex-basis: 50%;
+    }
+}
+@media (max-width:780px){
+    .cover div{
+        top:100px;
+    }
+    .cover div h1, .cover div h2{
+        font-size: 2.7rem;
+        color: black;
+    }
+    .tecnologies-container img{
+        width: 125px;
+    }
+    .element-contact{
+        flex-basis: 100%;
+    }
+    .elem2{
+        margin-top: 25px;
+    }
+
+
+}
+
+@media (max-width:576px){
+    .cover div{
+        top:130px;
+    }
+    .cover div h1, .cover div h2{
+        font-size: 2.2rem;
+        color: black;
+    }
+    .tecnologies-container img{
+        width: 100px;
+    }
+    footer{
+        height: auto;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+
+}
