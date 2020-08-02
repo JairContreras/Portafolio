@@ -212,11 +212,18 @@ footer ul{
     .tecnologies-container img{
         width: 100px;
     }
+    h3{
+        font-size: 1.3rem;
+    }
     footer{
-        height: auto;
+        height: 220px;
     }
     footer ul{
         flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer ul li{
+        height: 50px;
     }
 
 }
