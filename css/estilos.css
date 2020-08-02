@@ -19,6 +19,9 @@ header{
     z-index: 1;
     width: 100%;
 }
+.navbar-nav{
+    text-align: center;
+}
 /*Main*/
 .main{
     position: relative;
