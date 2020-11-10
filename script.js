@@ -45,6 +45,29 @@ const descripcion = function (id) {
     return descripcion;
 };
 
+const tecnologias = function(id){
+    let tec = []
+    switch(id){
+        case '1': tec =['HTML','CSS','JavaScript Vainilla'];
+        break;
+        case '2': tec =['HTML','CSS','Bootstrap'];
+        break;
+        case '3': tec =['JSX','React', 'Redux','CSS'];
+        break;
+        case '4': tec =['HTML','CSS','JavaScript Vainilla'];
+        break;
+        case '5': tec =['HTML','CSS','JavaScript Vainilla'];
+        break;
+        case '6': tec =['HTML','CSS','JavaScript Vainilla'];
+        break;
+        case '7': tec =['Swift','Firebase Authentication'];
+        break;
+        case '8': tec =['HTML','CSS','JavaScript'];
+        break;
+    }
+    return tec;
+}
+
 const link = function (id) {
     let link;
     switch (id) {
@@ -56,22 +79,14 @@ const link = function (id) {
             break;
         case '4': link = 'Guess-my-number-';
             break;
-
         case '5': link = 'PigGame';
             break;
-
         case '6': link = 'Bank';
-
             break;
-
         case '7': link = 'DejaVu';
-
             break; 
-
         case '8': link = 'FoodBox';
-
             break;
-
     }
     return link;
 };
@@ -82,9 +97,16 @@ const openModal = function (title, id) {
     modal.querySelector('.title-project').textContent = `${title}`;
     modal.querySelector('.img-project').setAttribute('src', `img/pro-${id}.jpg`);
     modal.querySelector('.description-project').textContent = descripcion(id);
-
     modal.querySelector('.link-project').setAttribute('href', `https://jaircontreras.github.io/${link(id)}/`);
-};
+    modal.querySelector('.tecnologias').innerHTML ='';
+    const tecn = tecnologias(id);
+    tecn.forEach(item => {
+        let element = document.createElement('li');
+        element.innerHTML = item;
+        document.querySelector('.tecnologias').insertAdjacentElement('beforeend',element); 
+    });
+}
+
 
 const closeModal = function (e) {
     e.preventDefault();
