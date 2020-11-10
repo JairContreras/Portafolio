@@ -9,9 +9,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f3f3f3;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black
+    color: black
 }
 
 .navbar {
@@ -45,12 +46,22 @@ a{
 .navbar-collapse {
     width: 100%;
 }
+/*
+.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+}*/
+  
+.nav-link:hover{
+    color: #287b50 !important;
+    font-weight: bolder;
+}
+
 
 /*flex childs*/
 
 #navbar {
     top: 0;
-    position: fixed;
     min-height: 100px;
     margin: 0;
     padding: 0;
@@ -61,11 +72,7 @@ a{
 
 /*Main*/
 
-.main {
-    position: relative;
-    top: 124px;
-    margin: auto;
-}
+
 
 /*Cover*/
 
@@ -103,7 +110,17 @@ h1 {
 }
 
 /* rows*/
-
+section {
+    transition: transform 1s, opacity 1s;
+  }
+  
+.section{
+    transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
 .container {
     width: 100% !important;
 }
@@ -121,18 +138,18 @@ h1 {
     border-bottom-left-radius: 80px;
 }
 
-.resume {
+.btn-green {
     border: 0px solid white;
     background-color: #287b50;
     color: white;
     height: 35px;
 }
 
-.resume:hover{
-  font-weight: bold;
+.btn-green:hover {
+    font-weight: bold;
 }
 
-.resume a {
+.btn-green a {
     color: white;
 }
 
@@ -145,61 +162,64 @@ h1 {
     font-weight: bold;
 }
 
-.element h4{
-   font-style: italic;
+.element h4 {
+    font-style: italic;
 }
 
-.element img{
+.element img {
     width: 150px;
 }
-/*about me*/
 
+/*about me*/
 
 .element img:hover {
     transform: scale(1.1);
 }
 
-
-
-
-
 /*Projects*/
-#projects{
+
+#projects {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
 }
-.projects-section{
+
+.projects-section {
     height: 250px;
     background-color: white;
 }
-.projects-section h2{
+
+.projects-section h2 {
     position: relative;
-    top:40px;
+    top: 40px;
 }
-.projects-section p{
+
+.projects-section p {
     margin-top: 90px;
     text-align: center;
 }
-.projects-section p .highlighted{
+
+.projects-section p .highlighted {
     font-weight: bold;
     font-style: italic;
 }
 
-.projects-container{
+.projects-container {
     margin-top: 50px;
 }
 
-.projects-container .row{
+.projects-container .row {
     justify-content: space-around;
 }
+
 .project {
     position: relative;
     flex-grow: 0;
     flex-basis: 300px;
     margin-bottom: 35px;
 }
-.project span{
+
+.project span {
     text-align: center;
     font-size: 18px;
 }
@@ -207,16 +227,16 @@ h1 {
 .project-tile {
     position: absolute;
     text-align: center;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     width: 100%;
     font-size: 0px;
     height: auto;
-    line-height: 150px;
+    line-height: 265px;
 }
 
 .project-tile a {
-    color: black;
+    color: white;
 }
 
 .project p {
@@ -227,8 +247,10 @@ h1 {
 .project-tile:hover {
     font-size: 28px;
     padding: 0;
-    color: black;
-    background: rgba(148, 158, 149, 0.8);
+    color: white;
+    font-weight: bold;
+    background: rgba(44, 139, 54, 0.8);
+   cursor: pointer; 
 }
 
 .project-tile span:hover {
@@ -243,9 +265,9 @@ h1 {
 
 /*Contact */
 
-#contact{
+#contact {
     position: relative;
-    top:55px;
+    top: 55px;
     width: 75%;
     background-color: #287b50;
     border-radius: 25px;
@@ -254,32 +276,44 @@ h1 {
     align-items: center;
     height: 100px;
     text-align: center;
-    color:white;
+    color: white;
 }
-#contact .elem1{
+
+#contact .elem1 {
     margin-left: 2%;
     font-weight: bolder;
     font-size: 1.1rem;
 }
-#contact .elem3{
-    color:white;
-   border: 1px solid white;
+
+#contact .elem3 {
+   
+    border: 1px solid white;
 }
-#contact .elem3:hover{
-    color: #287b50;
-    background-color: white;
+#contact .elem3 a{
+    color: white;
 
 }
+
+#contact .elem3:hover {
+    color: #287b50;
+    background-color: white;
+    color: black;
+}
+
+#contact .elem3:hover a {
+    color: black;
+}
 /*footer*/
-#footer{
+
+#footer {
     background-color: black;
-    color:white;
+    color: white;
     height: auto;
     display: flex;
     flex-direction: column;
 }
 
-#footer ul{
+#footer ul {
     width: 100%;
     text-align: center;
     display: flex;
@@ -287,23 +321,65 @@ h1 {
     justify-content: center;
 }
 
-
-#footer .navs li{
+#footer .navs li {
     padding: 100px 25px 0px 25px;
-    
 }
-#footer ul li a{
+
+#footer ul li a {
     color: white;
 }
 
-.icon{
+.icon {
     padding: 20px 75px 0px 75px;
     font-size: 2rem;
 }
-ion-icon{
-    color:white;
+
+ion-icon {
+    color: white;
 }
 
+/*Modal window*/
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hiddens {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modals {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    background-color: #f3f3f3;
+    padding: 5rem 6rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.overlays {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+}
 
 @media (max-width:991px) {
     .navbar {
@@ -316,8 +392,9 @@ ion-icon{
         text-align: center;
     }
 }
+
 @media (max-width:767px) {
-    .element{
+    .element {
         margin-bottom: 30px;
     }
 }

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jair | Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="navbar">
+    <header id="navbar" class="sticky">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="navbar-brand">
                 <a href="#"><img src="img/logo.jpg" class="img-logo"></a>
@@ -31,15 +31,13 @@
 
             <div class="collapse navbar-collapse justify-content-end mr-3" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#welcome-sectiom">Welcome<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome-section">Welcome<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-me">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Resume</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
@@ -64,20 +62,18 @@
             <button><a href="#about-me">Explore now</a></button>
         </div>
 
-        <article id="about-me" class="section-content container">
+        <section id="about-me" class="section-content container">
             <div class="row row-content d-flex align-items-center ">
                 <div class="col-12 col-md-6 text-justify">
                     <h2 class="text-center">About Me</h2>
-                    <p>Hi, I'm Jair. I study computer science engineering at Benemérita Universidad Autónoma de Puebla.
-                        I was an exchange student at the Universidad de Antioquia in Colombia where I acquiered
-                        managament time skills, as well as the abiliy to communicate with diferents teamworks</p>
-                    <p>I'm currently building my career as front-end developer and UX/UI designer.</p>
-                    <p>I've developed some academic projects and projects to start building my portfolio where I use
-                        HTML, CSS, JavaScript, Bootstrap, React and Responsive Layouts.</p>
-                    <p>I consider myself a hardworking, and creative person, a tech lover, always open for new learning
-                        challenges. I don't like to define myself by the work that I've done. I define myself by the
+                    <p>Hi, I'm Jair. I study Computer Science Engineering at Benemérita Universidad Autónoma de Puebla.
+                        I was an exchange student at the Universidad de Antioquia in Colombia where I acquired
+                        management time skills, as well as the ability to communicate with diferents teamworks</p>
+                    <p>Currently I'm building my career as front-end developer, as well as an UX/UI designer.</p>
+                    <p>Throughout my academic career I have developed projects to start building my portfolio. I have used HTML, CSS, JavaScript, Bootstrap, React and Responsive Layouts.</p>
+                    <p>I consider myself a hardworking, and creative person, and definitely a tech lover. I don't like to define myself by the work that I have done. I define myself by the
                         work I want to do.</p>
-                    <button class="btn resume"><a href="cv.pdf" target="_blank">Download Resume</a></button>
+                    <button class="btn-green resume"><a href="cv.pdf" target="_blank">Download Resume</a></button>
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="img/yo.jpg" class="img-fluid img-profile">
@@ -121,34 +117,9 @@
                 </div>
 
             </div>
-            <!--
-            <div class="row row-content">
-                <div class="element-skill  col-12 col-md-4">
-                    <h3>01. Research</h3>
-                    <p class="text-justify ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio
-                        blanditiis exercitationem, est nobis quia qui eveniet placeat quisquam rerum deserunt at
-                        iure dolorem repellendus, dicta tenetur.
-                        .</p>
-                </div>
-                <div class="element-skill col-12 col-md-4">
-                    <h3>02. Design</h3>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio
-                        blanditiis exercitationem, est nobis quia qui eveniet placeat quisquam rerum deserunt at
-                        iure dolorem repellendus, dicta tenetur.
-                    </p>
+           
 
-
-                </div>
-                <div class="element-skill col-12 col-md-4">
-                    <h3>03. Develop</h3>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci odio
-                        blanditiis exercitationem, est nobis quia qui eveniet placeat quisquam rerum deserunt at
-                        iure dolorem repellendus, dicta tenetur.
-                    </p>
-
-                </div>
-            -->
-        </article>
+        </section>
 
         <section id="projects" class="container-fluid">
             <div class="projects-section">
@@ -161,57 +132,50 @@
             </div>
 
             <div class="container-fluid projects-container">
-                <div class="row">
+                <div class="row row-pro">
                     <div class="project card col-12 col-md-4">
-                        <img src="img/pro-1.jpg" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/Bankist/"
-                                target="_blank">Bankist</a></div>
-                        <span>Bankist</span>
+                        <img src="img/p1.jpeg" alt="Bankist" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="1">Bankist</a></div>
+                        <span><a href="" class="name-project">Bankist</a></span>
                     </div>
                     <div class="project card col-12 col-md-4">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/cafe/" target="_blank">Café
-                                Córdoba</a></div>
-                        <img src="img/pro-2.jpeg" alt="doc-page" class="img-fluid" width="220px">
-                        <span>Café Córdoba</span>
+                        <img src="img/p2.jpeg" alt="Café Córdoba" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="2">Café Córdoba</a></div>
+                        <span><a href="" class="name-project">Café Córdoba</a></span>
                     </div>
                     <div class="project card col-12 col-md-4">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/my-app"
-                                target="_blank">Confusion</a></div>
-                        <img src="img/pro-3.jpg" alt="landing-page" class="img-fluid" width="220px">
-                        <span>Confusión</span>
+                        <img src="img/p3.jpeg" alt="Confusion" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="3">Confusion</a></div>
+                        <span><a href="" class="name-project">Confusion</a></span>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row-pro">
                     <div class="project card col-12 col-md-4">
-                        <img src="img/pro-4.jpg" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/Guess-my-number-/"
-                                target="_blank">Guess my number!</a></div>
-                        <span>Guess my number</span>
+                        <img src="img/p4.jpeg" alt="Guess my number" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="4">Guess my number!</a></div>
+                        <span><a href="" class="name-project">Guess my number!</a></span>
                     </div>
                     <div class="project card col-12 col-md-4">
-                        <img src="img/pro-5.jpg" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/PigGame/" target="_blank">Pig
-                                Game</a></div>
-                        <span>Pig Game</span>
+                        <img src="img/p5.jpeg" alt="Pig Game" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="5">Pig Game</a></div>
+                        <span><a href="" class="name-project">Pig Game</a></span>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row-pro">
                     <div class="project card col-12 col-md-4">
-                        <img src="img/pro-6.jpg" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/Bank/"
-                                target="_blank">Bankist</a></div>
-                        <span>Bankist</span>
+                        <img src="img/p6.jpeg" alt="BankApp" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="6">Bank App</a></div>
+                        <span><a href="" class="name-project">Bank App</a></span>
                     </div>
                     <div class="project card col-12 col-md-4">
-                        <img src="img/deja.png" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="#" target="_blank">Déjà vu</a></div>
-                        <span>Déjà Vu</span>
+                        <img src="img/p7.jpeg" alt="Deja Vu" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="7">Déjà Vu!</a></div>
+                        <span><a href="" class="name-project">Déjà Vu!</a></span>
                     </div>
                     <div class="project card col-12 col-md-4">
-                        <img src="img/pro-7.jpg" alt="Bankist" class="img-fluid" width="220px">
-                        <div class="project-tile"><a href="https://jaircontreras.github.io/Bankist/"
-                                target="_blank">FoodBox</a></div>
-                        <span>FoodBox</span>
+                        <img src="img/p8.jpeg" alt="Food Box" class="img-fluid" width="220px">
+                        <div class="project-tile"><a target="_blank" class="open-modal" data-id="8">Food Box</a></div>
+                        <span><a href="" class="name-project">Food Box</a></span>
                     </div>
                 </div>
             </div>
@@ -220,94 +184,47 @@
         <section id="contact" class="container-fluid">
             <div class="elem1">Start a project!</div>
             <div class="elem2">Interesed in working together?</div>
-            <button class="btn elem3">Let's do this.</button>
+            <button class="btn elem3"><a href="mailto:jair.contrerascer@gmail.com">Let's do this</a></button>
         </section>
+
+
+        <div class="modals hiddens">
+            <button class="close-modal">×</button>
+            <h3 class="title-project text-center"></h3>
+            <img src="img/" alt="" class="img-project img-fluid">
+            <p class="description-project text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officia aspernatur nemo vitae quae totam libero, incidunt voluptas in vel veritatis repellat quaerat dicta magnam omnis quam earum nesciunt id.</p>
+            <button class="btn-green"><a class="link-project" target="_blank">Visit Page</a></button>
+        </div>
+        <div class="overlays hiddens"></div>
+
 
         <footer id="footer">
             <ul class="navs">
                 <li><a href="#welcome-section">Welcome</a></li>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#about-me">Resume</a></li>
+                <li><a href="cv.pdf">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#projects">Contact</a></li>
             </ul>
             <ul>
-                <li class="icon"><a href="https://github.com/JairContreras" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li class="icon"><a href="https://twitter.com/HelloJair" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li class="icon"><a href="https://www.linkedin.com/in/luis-jair-cc" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li class="icon"><a href="https://www.instagram.com/jairc.js/" ><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li class="icon"><a href="https://github.com/JairContreras" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                <li class="icon"><a href="https://twitter.com/HelloJair" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li class="icon"><a href="https://www.linkedin.com/in/luis-jair-cc" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li class="icon"><a href="https://www.instagram.com/jairc.js/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
             </ul>
         </footer>
-        
-    </div>
-    <!--
-
-
-        </div>
-        <div id="contact" class="row-content container">
-            <h2 class="text-center">Contact Me</h2>
-            <div class="flex-container">
-                <div class="element-contact elem2">
-                    <h3 class="text-center">Find me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate veniam libero
-                        possimus tempore.</p>
-                    <div class="flex-container logos">
-                        <a href="#" target="_blank">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                        <a href="https://instagram.com/jaired96" target="_blank">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <ion-icon name="mail"></ion-icon>
-                        </a>
-                        <a href="https://github.com/JairContreras" id="profile-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="text-center datos">
-                        <addres>Córdoba, Veracruz.</addres><br>
-                        <addres>Puebla de Zaragoza, Puebla.</addres><br>
-                        01-55-123456
-                    </div>
-                </div>
-                <form class="element-contact elem1">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="last-name">Last Name</label>
-                            <input type="password" class="form-control" id="last-name">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form group col-md-12">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form group col-md-12">
-                            <label for="message">Message</label><br>
-                            <textarea cols="100%" class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <input type="submit" value="Enviar" class="col-3 offset-4 form-control">
-                </form>
-            </div>
-
-        </div>
-
-
 
     </div>
 
-
-
-        -->
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -318,6 +235,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
