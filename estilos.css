@@ -77,7 +77,7 @@ a {
 /*Cover*/
 
 #welcome-section {
-    background-image: url('/img/img2.jpg');
+    background-image: url('img/img2.jpg');
     background-size: cover;
     min-height: 250px;
     color: white;
